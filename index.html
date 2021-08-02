@@ -10,30 +10,32 @@
 <body>
     <div class="container">
         <h1 class="heading">CASH CHECK</h1>
-        <label for="cash-amount">Bill Amount</label>
+        <label for="cash-amount" style="font-size: large;">Bill Amount</label>
         <input type="text" id="cash-amount">
-        <label for="cash-given">Cash Given</label>
+        <label for="cash-given" style="font-size: large;">Cash Given</label>
         <input type="text" id="cash-given">
         <button type="button" id="btn-check">Check</button>
-        <table style="border: 2px;">
+        <p id="show-message"></p>
+        <table id="table-cash">
             <caption>ReturnAmount</caption>
-            <th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>2</td>
-                <td>1</td>
-            </th>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+           <tr>
+               <th>no-of-notes</th>
+               <td class="no-of-note"></td>
+               <td class="no-of-note"></td>
+               <td class="no-of-note"></td>
+               <td class="no-of-note"></td>
+               <td class="no-of-note"></td>
+               <td class="no-of-note"></td>
+           </tr>
+           <tr>
+               <th>note</th>
+               <td>2000</td>
+               <td>500</td>
+               <td>100</td>
+               <td>20</td>
+               <td>10</td>
+               <td>1</td>
+           </tr>
         </table>
 
     </div>

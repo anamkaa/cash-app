@@ -1,8 +1,47 @@
 .container{
+    padding: 1rem;
     padding: auto;
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 50vw;
+    background-color: orange;
+    border-radius: 1rem;
+    
 }
+
+#cash-amount{
+padding: 0.5rem;
+border-radius: 0.2rem;
+}
+
+#cash-given{
+padding: 0.5rem;
+border-radius: 0.2rem;
+}
+
+#btn-check{
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    width:15vw;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 2rem;
+    
+}
+
+#table-cash{
+    border: solid 2px black;
+    border-radius: 0.2rem;
+}
+
+#table-cash , caption{
+    font-size: large;
+    font-weight: bold;
+    padding: 0.8rem;
+}
+
