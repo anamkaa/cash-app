@@ -10,16 +10,17 @@
 <body>
     <div class="container">
         <h1 class="heading">CASH CHECK</h1>
-        <label for="cash-amount" style="font-size: large;">Bill Amount</label>
-        <input type="text" id="cash-amount">
+        <label for="bill-amount" style="font-size: large;">Bill Amount</label>
+        <input type="text" id="bill-amount">
         <label for="cash-given" style="font-size: large;">Cash Given</label>
         <input type="text" id="cash-given">
-        <button type="button" id="btn-check">Check</button>
+        <button type="button" id="btn-check">Calculate</button>
         <p id="show-message"></p>
         <table id="table-cash">
             <caption>ReturnAmount</caption>
            <tr>
                <th>no-of-notes</th>
+               <td class="no-of-note"></td>
                <td class="no-of-note"></td>
                <td class="no-of-note"></td>
                <td class="no-of-note"></td>
@@ -34,6 +35,7 @@
                <td>100</td>
                <td>20</td>
                <td>10</td>
+               <td>5</td>
                <td>1</td>
            </tr>
         </table>

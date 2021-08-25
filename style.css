@@ -11,7 +11,7 @@
     
 }
 
-#cash-amount{
+#bill-amount{
 padding: 0.5rem;
 border-radius: 0.2rem;
 
@@ -33,6 +33,12 @@ border-radius: 0.2rem;
     font-weight: bold;
     margin-top: 2rem;
     
+}
+
+#btn-check:hover{
+    font-size: larger;
+    background-color: gray;
+    color: white;
 }
 
 #table-cash{

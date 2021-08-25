@@ -1,22 +1,22 @@
-var cashAmount = document.querySelector("#cash-amount");
-var cashGiven = document.querySelector("#cash-given");
-var btnCheck = document.querySelector("#btn-check");
-var showMessage = document.querySelector("#show-message");
-var noOfnote = document.querySelectorAll(".no-of-note");
+const billAmount = document.querySelector("#bill-amount");
+const cashGiven = document.querySelector("#cash-given");
+const btnCheck = document.querySelector("#btn-check");
+const showMessage = document.querySelector("#show-message");
+const noOfnote = document.querySelectorAll(".no-of-note");
 
-var availableNotes = [2000,500,100,20,10,1];
+const availableNotes = [2000,500,100,20,10,5,1];
 
 btnCheck.addEventListener("click", validateCash);
 
 function validateCash(){
     showMessage.style.display = "none";
 
-    if(cashAmount.value>0){
+    if(billAmount.value>0){
         
-        if(cashGiven.value>cashAmount.value|| cashGiven.value==cashAmount.value){
+        if(cashGiven.value>billAmount.value || cashGiven.value===billAmount.value){
            
         //    net cash to be returned is calculated 
-            var netCash = cashGiven.value - cashAmount.value;
+            const netCash = (cashGiven.value - billAmount.value);
            calculateCash(netCash);
         }
 
@@ -36,10 +36,10 @@ function validateCash(){
 function calculateCash(netCash){
 
     // traverse through all the available notes
-    for(var i=0; i<availableNotes.length; i++){
+    for(let i=0; i<availableNotes.length; i++){
 
         // calculating number of note of each denomination
-        var numberOfNotes = Math.trunc(netCash/availableNotes[i]);
+        const numberOfNotes = Math.trunc(netCash/availableNotes[i]);
 
          netCash = netCash%availableNotes[i];
 
