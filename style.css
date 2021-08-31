@@ -6,55 +6,136 @@
 }
 
 body{
-    background-color: orange;
+    background-color: #6F69AC;
     font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
 }
 
-.container{
+.first{
     padding: 1rem;
     padding: auto;
     margin: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+    max-width: 600px;
+    /* height: 100vh; */
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+    /* overflow-x: hidden; */
+}
+
+ .container{
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     border-radius: 1rem;
     
 }
 
+#next-sec{
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.para{
+    width: 60%;
+    padding: 0.5rem;
+    margin: 1rem;
+    /* border: 1px solid black; */
+    border-radius: 0.4rem;
+    background-color: #95DAC1;
+}
+
+#first-message{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: large;
+
+}
+
+#show-message{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: large;
+}
+
 #bill-amount{
+    width: 60%;
 padding: 0.5rem;
-border-radius: 0.2rem;
+border: none;
+border-radius: 0.3rem;
 
 }
 
 #cash-given{
+    width: 60%;
 padding: 0.5rem;
-border-radius: 0.2rem;
+
+border: none;
+border-radius: 0.3rem;
+
 }
 
 #btn-check{
     padding: 0.3rem;
-    border-radius: 0.2rem;
-    width:15vw;
+    border-radius: 0.3rem;
+    width:10rem;
     padding: auto;
     margin: auto;
     text-align: center;
     font-size: large;
     font-weight: bold;
     margin-top: 2rem;
-    
+    border: none;
+    border-radius: 0.3rem;
+    transition: 0.3s;
 }
 
 #btn-check:hover{
-    font-size: larger;
-    background-color: gray;
-    color: white;
+    background-color: #FFEBA1;
 }
+
+#nxt-btn{
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    width:10rem;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+
+}
+
+
+#nxt-btn:hover{
+    background-color: #FFEBA1;
+}
+
 
 #table-cash{
     border: solid 2px black;
     border-radius: 0.2rem;
+    width: 80%;
 }
 
 #table-cash , caption{
@@ -85,14 +166,17 @@ border-radius: 0.2rem;
 {
     width: 100%;
     padding: auto;
-    margin: auto;
     text-align: center;
-    background-color:gray;
+    color: black;
+    background-color: #95DAC1;
     border-bottom-right-radius: 1rem;
     position: fixed;
     bottom:0 ;
     padding: 1rem;
-
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow-x: hidden;
 }
 
 .footer .link
@@ -106,4 +190,24 @@ border-radius: 0.2rem;
     padding-inline-start: 0;
 }
 
+@media only screen and (max-width: 600px) {
+    .first {
+        max-width: auto;
 
+    }    
+
+    .para {
+        width: 90%;
+    }
+    #bill-amount {
+        width: 90%;
+    }
+
+    #cash-given {
+        width: 90%;
+    }
+
+    #table-cash {
+        width: 90%;
+    }
+}

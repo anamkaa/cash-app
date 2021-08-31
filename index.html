@@ -8,45 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="heading">CASH CHECK</h1>
-        <p class="para">Enter your bill amount and cash paid to know change to be returned.</p>
-        <label for="bill-amount" style="font-size: large;"> Enter Bill Amount</label>
-        <input type="number" id="bill-amount">
-        <button id="nxt-btn">Next</button>
-        <p id="first-message"></p>
-        <div id="next-sec">
-            <label for="cash-given" style="font-size: large;">Cash Given</label>
-        <input type="number" id="cash-given">
-        <button type="button" id="btn-check">Calculate</button>
-        <p id="show-message"></p>
-        <table id="table-cash">
-            <caption>ReturnAmount</caption>
-           <tr>
-               <th>no-of-notes</th>
-               <td class="no-of-note"></td>
-               <td class="no-of-note"></td>
-               <td class="no-of-note"></td>
-               <td class="no-of-note"></td>
-               <td class="no-of-note"></td>
-               <td class="no-of-note"></td>
-               <td class="no-of-note"></td>
-           </tr>
-           <tr>
-               <th>note</th>
-               <td>2000</td>
-               <td>500</td>
-               <td>100</td>
-               <td>20</td>
-               <td>10</td>
-               <td>5</td>
-               <td>1</td>
-           </tr>
-        </table>
-
+    <main class="first">
+        <div class="container">
+            <h1 class="heading">CASH CHECK</h1>
+            <p class="para">Enter your bill amount and cash paid to know change to be returned.</p>
+            <label for="bill-amount" style="font-size: large;"> Enter Bill Amount</label>
+            <input type="number" id="bill-amount">
+            <button id="nxt-btn">Next</button>
+            <p id="first-message"></p>
         </div>
+            <div id="next-sec">
+                <label for="cash-given" style="font-size: large;">Cash Given</label>
+            <input type="number" id="cash-given">
+            <button type="button" id="btn-check">Calculate</button>
+            <p id="show-message"></p>
+            <table id="table-cash">
+                <caption>ReturnAmount: <span id="ra"></span></caption>
+               <tr>
+                   <th>no-of-notes</th>
+                   <td class="no-of-note"></td>
+                   <td class="no-of-note"></td>
+                   <td class="no-of-note"></td>
+                   <td class="no-of-note"></td>
+                   <td class="no-of-note"></td>
+                   <td class="no-of-note"></td>
+                   <td class="no-of-note"></td>
+               </tr>
+               <tr>
+                   <th>note</th>
+                   <td>2000</td>
+                   <td>500</td>
+                   <td>100</td>
+                   <td>20</td>
+                   <td>10</td>
+                   <td>5</td>
+                   <td>1</td>
+               </tr>
+            </table>
+    
+            </div>
+    </main>
+   
         
-    </div>
+    
 
     <footer class="footer">
         <div class="footer-header">
