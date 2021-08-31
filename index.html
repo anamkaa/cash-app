@@ -10,10 +10,14 @@
 <body>
     <div class="container">
         <h1 class="heading">CASH CHECK</h1>
-        <label for="bill-amount" style="font-size: large;">Bill Amount</label>
-        <input type="text" id="bill-amount">
-        <label for="cash-given" style="font-size: large;">Cash Given</label>
-        <input type="text" id="cash-given">
+        <p class="para">Enter your bill amount and cash paid to know change to be returned.</p>
+        <label for="bill-amount" style="font-size: large;"> Enter Bill Amount</label>
+        <input type="number" id="bill-amount">
+        <button id="nxt-btn">Next</button>
+        <p id="first-message"></p>
+        <div id="next-sec">
+            <label for="cash-given" style="font-size: large;">Cash Given</label>
+        <input type="number" id="cash-given">
         <button type="button" id="btn-check">Calculate</button>
         <p id="show-message"></p>
         <table id="table-cash">
@@ -40,6 +44,8 @@
            </tr>
         </table>
 
+        </div>
+        
     </div>
 
     <footer class="footer">
