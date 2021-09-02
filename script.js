@@ -36,7 +36,7 @@ function showNextSection() {
 function validateCash() {
   showMessage.style.display = "none";
 
-  console.log("billAmount: " + billAmount.value + ", cashGiven: " + cashGiven.value);
+  // console.log("billAmount: " + billAmount.value + ", cashGiven: " + cashGiven.value);
 
   if (billAmount.value > 0 && cashGiven.value > 0) {
     if (
@@ -65,7 +65,7 @@ function calculateCash(netCash) {
     // calculating number of note of each denomination
     const numberOfNotes = Math.floor(netCash / availableNotes[i]);
 
-    netCash = netCash - numberOfNotes * availableNotes[i];
+    netCash = netCash % availableNotes[i];
 
     noOfnote[i].innerText = numberOfNotes;
   }
